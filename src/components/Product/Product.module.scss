@@ -1,0 +1,15 @@
+.Product {
+    margin: 10px;
+    width: 300px;
+    height: 500px;
+    // border: 3px solid burlywood;
+    box-shadow: 5px 5px rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
+    text-align: center;
+
+    background-color: white;
+
+    &__Image {
+        max-height: 50%;
+    }
+}
