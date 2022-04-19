@@ -2,7 +2,7 @@ import firestore from "./firebase";
 
 // Getting fakestore API data - https://fakestoreapi.com/
 
-const getFake = async () => {
+const getFakeProds = async () => {
     const response = [
         await fetch("https://fakestoreapi.com/products/category/men's%20clothing"),
         await fetch("https://fakestoreapi.com/products/category/women's%20clothing"),
@@ -23,12 +23,19 @@ const seedProducts = async () => {
 
     if (!data.empty) return;
 
-    const products = await getFake();
-    const promiseArr = products.map(async (product) => await collectionRef.add(product));
+    const products = await getFakeProds();
+
+    const variants = ["XS", "S", "M", "L", "XL"];
+    const prodsWithVariants = products.map((prod) => {
+        return { ...prod, variants };
+    });
+
+    const promiseArr = prodsWithVariants.map(async (prod) => await collectionRef.add(prod));
     await Promise.all(promiseArr);
 };
 
 export const getFirestoreData = async (collectionName) => {
+    seedProducts();
     const collectionRef = firestore.collection(collectionName);
 
     const data = await collectionRef.get();

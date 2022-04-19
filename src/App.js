@@ -1,8 +1,9 @@
-import style from "./App.module.scss";
+import "./App.module.scss";
 import { useEffect, useState } from "react";
-import Header from "./containers/Header/Header";
-import ProductList from "./containers/ProductList/ProductList";
 import { getFirestoreData } from "./services/server";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./containers/Home/Home";
+import ProductPage from "./containers/ProductPage/ProductPage";
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -18,11 +19,19 @@ const App = () => {
 
     console.log(products);
 
+    const featuredProducts = products.filter((prod) => prod.isFeatured);
+    // console.log(featuredProducts);
+
     return (
-        <main>
-            <Header />
-            <ProductList products={products} />
-        </main>
+        <BrowserRouter>
+            <Routes>
+                <Route
+                    path="/"
+                    element={<Home products={products} featuredProducts={featuredProducts} />}
+                />
+                <Route path="/product/:prodID" element={<ProductPage products={products} />} />
+            </Routes>
+        </BrowserRouter>
     );
 };
 

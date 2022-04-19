@@ -1,0 +1,40 @@
+.Carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(156, 126, 86);
+    color: black;
+    &__Prev,
+    &__Next {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        cursor: pointer;
+        transition: color 0.6s ease;
+        background: none;
+        border-style: none;
+        font-size: large;
+        &:hover {
+            color: lightgrey;
+        }
+    }
+    &__Next {
+        left: 70%;
+    }
+    &__Dot {
+        cursor: pointer;
+        background-color: white;
+        height: 15px;
+        width: 15px;
+        margin: 5px 2px;
+        border-radius: 50%;
+        border-style: none;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        &:hover {
+            background-color: lightgrey;
+        }
+    }
+}

@@ -1,8 +1,10 @@
+import style from "./Header.module.scss";
+
 const Header = () => {
     return (
-        <header>
-            <h1>E-Commerce Application</h1>
-            <p>Welcome to my marketplace where you can spend your hard-earned cash!</p>
+        <header className={style.Header}>
+            <h1>My Marketplace</h1>
+            <p>Discover an assortment of sustainable hand-crafted clothing here</p>
         </header>
     );
 };

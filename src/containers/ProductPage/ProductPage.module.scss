@@ -1,0 +1,18 @@
+.ProductPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__Heading {
+        text-align: center;
+    }
+    &__Image {
+        max-width: 20%;
+        border-radius: 20px;
+    }
+    &__Price {
+        font-size: x-large;
+        font-weight: bold;
+    }
+}

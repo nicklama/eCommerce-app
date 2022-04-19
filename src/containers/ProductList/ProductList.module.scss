@@ -1,4 +1,10 @@
 .ProductList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 5px;
+    &__Heading {
+        margin: 10px;
+    }
 }

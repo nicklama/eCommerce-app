@@ -1,15 +1,20 @@
 .Product {
-    margin: 10px;
-    width: 300px;
-    height: 500px;
-    // border: 3px solid burlywood;
+    padding: 0 10px;
+    width: 280px;
+    height: 350px;
     box-shadow: 5px 5px rgba(211, 211, 211, 0.5);
     border-radius: 10px;
     text-align: center;
 
+    // removes link styling
+    text-decoration: inherit;
+    color: inherit;
+
     background-color: white;
+    color: black;
 
     &__Image {
         max-height: 50%;
+        padding-top: 10px;
     }
 }

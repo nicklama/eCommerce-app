@@ -1,18 +1,23 @@
-# eCommerce-app
+# My eCommerce Marketplace
 
-## Requirments
+## Introduction
 
-Create a React E-commerce Application
-DUE TUESDAY 19th of APRIL
+This is an eCommerce application built in ReactJS which utilises Google Firestore for persistent backend data storage.
+
+## Future of the Project
+
+-   Bonus cart system functionality yet to be implemented
+
+## Requirements
 
 ### MVP
 
 2 pages:
 
 -   Home Page
--   Grid of products
--   Carousel of featured products
--   Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
+    -   Grid of products
+    -   Carousel of featured products
+-   Product Page (with id parameter) - similar to a product page on another site, allows you to add to cart and select product variants
 
 All products should be stored in Firestore, you should store the following information:
 
@@ -23,7 +28,7 @@ All products should be stored in Firestore, you should store the following infor
 -   image url
 -   favourited or not (boolean)
 
-All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application
+All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application.
 
 ### Bonus
 
@@ -37,4 +42,8 @@ Cart page should have the following:
 -   ability to change quantity of products in cart
 -   ability to remove items from cart
 
-Make sure your site is scoped to one category of products
+Make sure your site is scoped to one category of products.
+
+## Resources
+
+[HTML Carousel](https://appcode.app/how-to-create-an-html-carousel/)
