@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "./assets/theme";
 
 body {
     margin: 0;
-    background-color: rgb(100, 110, 70);
+    background-color: $primary;
     color: white;
     font-family: "Montserrat", sans-serif;
 }
