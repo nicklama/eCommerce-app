@@ -18,11 +18,6 @@
     &__Description {
         max-width: fit-content;
     }
-    // &__Content {
-    // position: relative;
-    // display: flex;
-    // flex-direction: column;
-    // }
     &__Icon {
         display: block;
         padding: 10px 0 0 0;
@@ -33,19 +28,6 @@
             color: lightgrey;
         }
         &_red {
-            color: red;
-        }
-    }
-    &__FavIcon {
-        //     background-color: white;
-        //     border-radius: 50%;
-        //     padding: 5px 5px 0 5px;
-        //     position: absolute;
-        //     bottom: -50%;
-
-        &_red {
-            // filter: invert(23%) sepia(83%) saturate(6542%) hue-rotate(355deg) brightness(95%)
-            //     contrast(121%);
             color: red;
         }
     }

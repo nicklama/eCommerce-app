@@ -4,4 +4,7 @@
     background-color: $secondary;
     text-align: right;
     font-size: 2rem;
+    & a {
+        color: $textsecondary;
+    }
 }

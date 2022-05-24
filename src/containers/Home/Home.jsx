@@ -1,5 +1,5 @@
 import Carousel from "../Carousel/Carousel";
-import Header from "../Header/Header";
+import Header from "../../components/Header/Header";
 import ProductList from "../ProductList/ProductList";
 
 const Home = ({ featuredProducts, products }) => {

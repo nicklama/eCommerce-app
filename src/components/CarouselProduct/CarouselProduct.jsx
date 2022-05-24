@@ -2,11 +2,9 @@ import { Link } from "react-router-dom";
 import style from "./CarouselProduct.module.scss";
 
 const CarouselProduct = ({ product }) => {
-    const prodPath = `/product/${product?.id}`;
-
     return (
         <div className={style.CarouselProduct}>
-            <Link to={prodPath} className={style.CarouselProduct__Link}>
+            <Link to={`/product/${product?.id}`} className={style.CarouselProduct__Link}>
                 <img className={style.CarouselProduct__Image} src={product?.image} alt="Product" />
             </Link>
             <span className={style.CarouselProduct__Text}>

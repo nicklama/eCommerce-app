@@ -15,23 +15,20 @@ const Cart = () => {
         getData();
     }, []);
 
+    // handles the user deleting a specific product from the cart
     const cartDel = (id) => {
-        // filter removes a specific ID
-        // console.log(cartProducts);
-        // cart.splice(id, 1);
+        // sets the cart by filtering out the deleted product
         setCart(cartProducts.filter((prod) => prod.id !== id));
-        // console.log(cartProducts);
     };
 
-    console.log(cartProducts);
-
+    // calculates the total cart amount by multiplying the product price by the total quantity of all sizes
     const total = cartProducts.reduce(
         (acc, prod) => acc + prod.price * Object.values(prod.cart).reduce((sum, n) => sum + n),
         0,
     );
 
+    // updates the total price when a quantity is changed by setting the cart
     const handleUpdate = () => {
-        // updates the total price when a quantity is changed
         setCart([...cartProducts]);
     };
 
