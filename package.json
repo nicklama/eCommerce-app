@@ -1,6 +1,7 @@
 {
     "name": "ecommerce-app",
     "version": "0.1.0",
+    "homepage": "https://nicklama.github.io/eCommerce-app",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
