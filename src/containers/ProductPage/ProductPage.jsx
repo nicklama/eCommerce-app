@@ -32,8 +32,8 @@ const ProductPage = ({ products, setProducts }) => {
     };
 
     const handleCartAdd = async () => {
-        // exits if no size has been selected
-        if (!selectedSize) return;
+        // returns an alert if no size has been selected
+        if (!selectedSize) return alert("Please select a size before adding to the cart.");
         // gets the product from the DB
         let cartProd = await getProduct(product.id.toString(), "cart");
         // checks if product exists in the cart collection
