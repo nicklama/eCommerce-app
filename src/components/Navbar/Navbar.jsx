@@ -6,13 +6,13 @@ import { faCartShopping, faHeart, faHome } from "@fortawesome/free-solid-svg-ico
 const Navbar = () => {
     return (
         <nav className={style.Navbar}>
-            <Link to="/">
+            <Link to="/eCommerce-app/">
                 <FontAwesomeIcon icon={faHome} title="Home" />
             </Link>
-            <Link to="/cart">
+            <Link to="/eCommerce-app/cart">
                 <FontAwesomeIcon icon={faCartShopping} title="Cart" />
             </Link>
-            <Link to="/favourites">
+            <Link to="/eCommerce-app/favourites">
                 <FontAwesomeIcon icon={faHeart} title="Favourites" />
             </Link>
         </nav>

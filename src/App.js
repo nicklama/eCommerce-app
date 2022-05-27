@@ -32,16 +32,18 @@ const App = () => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route
-                    path="/"
-                    element={<Home products={products} featuredProducts={featuredProducts} />}
-                />
-                <Route path="/cart" element={<Cart />} />
-                <Route
-                    path="/product/:prodID"
-                    element={<ProductPage products={products} setProducts={setProducts} />}
-                />
-                <Route path="/favourites" element={<Favourites favProducts={favProducts} />} />
+                <Route path="eCommerce-app">
+                    <Route
+                        path=""
+                        element={<Home products={products} featuredProducts={featuredProducts} />}
+                    />
+                    <Route path="cart" element={<Cart />} />
+                    <Route
+                        path="product/:prodID"
+                        element={<ProductPage products={products} setProducts={setProducts} />}
+                    />
+                    <Route path="favourites" element={<Favourites favProducts={favProducts} />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );

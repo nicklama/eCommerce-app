@@ -49,7 +49,7 @@ const CartProduct = ({ product, cartDel, handleUpdate }) => {
 
     return (
         <div className={style.CartProduct}>
-            <Link to={`/product/${product.id}`} className={style.CartProduct__Link}>
+            <Link to={`../product/${product.id}`} className={style.CartProduct__Link}>
                 <img className={style.CartProduct__Image} src={cartProduct.image} alt="Product" />
             </Link>
             <span>
